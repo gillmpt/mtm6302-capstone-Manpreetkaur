@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Pokémon Info</h1>
+    <nav>
+        <ul>
+            <li><a href="#page1">Home</a></li>
+            <li><a href="#page2">Search</a></li>
+            <li><a href="#trending">Trending</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="page1">
+        <h2>Welcome to the Pokémon World!</h2>
+        <div class="pokemon-display">
+            <div class="pokemon-container" data-pokemon="pikachu">
+                <img src="pikachu.png" alt="Pikachu">
+                <div class="overlay">
+                    <p>Electric Mouse Pokémon</p>
+                </div>
+            </div>
+            <div class="pokemon-container" data-pokemon="charmander">
+                <img src="charmander.png" alt="Charmander">
+                <div class="overlay">
+                    <p>Fire Lizard Pokémon</p>
+                </div>
+            </div>
+            <div class="pokemon-container" data-pokemon="squirtle">
+                <img src="squirtle.png" alt="Squirtle">
+                <div class="overlay">
+                    <p>Tiny Turtle Pokémon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page2">
+        <div class="search-container">
+            <h2>Search for Your Favorite Pokémon</h2>
+            <input type="text" id="search-bar" placeholder="Search...">
+        </div>
+        <div class="pokemon-list">
+        </div>
+    </section>
+
+    <section id="trending">
+        <h2>Trending Pokémon</h2>
+        <div class="trending-pokemon">
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
